@@ -12,7 +12,7 @@ Route::get('/', HomeController::class);
 Route::get('/about', AboutController::class);
 Route::get('/articles/{id}', ArticleController::class);
 Route::resource('photos', PhotoController::class)->only(['index', 'show']);
-Route::resource('photos', PhotoController::class)->except(['create', 'store', 'update', 'destroy']);
+Route::resource('photos', PhotoController::class)->except(['create', 'store', 'update', 'destroy']); 
 
 
 // Route::get('/user/{nama}', function ($nama) {
