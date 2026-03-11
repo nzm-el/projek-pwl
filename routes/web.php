@@ -14,7 +14,6 @@ Route::get('/articles/{id}', ArticleController::class);
 Route::resource('photos', PhotoController::class)->only(['index', 'show']);
 Route::resource('photos', PhotoController::class)->except(['create', 'store', 'update', 'destroy']);
 
-
 // Route::get('/user/{nama}', function ($nama) {
 //     return 'Nama saya ' . $nama; 
 // });
